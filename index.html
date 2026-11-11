@@ -215,6 +215,16 @@ button.gp{border:0;cursor:pointer;font:inherit;font-weight:700;font-size:12px;te
 .sp{background:var(--ac);color:#fff;letter-spacing:.14em;font-weight:800;font-size:15px;padding:10px 0;border-top:2px solid rgba(255,255,255,.4);border-bottom:2px solid rgba(255,255,255,.4);box-shadow:0 6px 20px #0009;text-transform:uppercase}
 .card.sold{border-color:rgba(255,59,48,.55)}
 .sp{top:50%;transform:translateY(-50%);background:rgba(0,0,0,.78);color:#fff;border-top:1px solid rgba(255,255,255,.35);border-bottom:1px solid rgba(255,255,255,.35);padding:9px 0;font-size:15px;box-shadow:none}
+.bmc{max-height:92vh;overflow:auto}.bmp{margin:0 0 12px;color:var(--mut);font-size:14px}.bmo{margin:14px 0 8px;color:var(--mut);font-size:13px}
+#of{display:grid;gap:8px}#of input:not([type=radio]){width:100%;background:var(--bg);color:var(--tx);border:1px solid var(--ln);border-radius:6px;padding:12px;font:inherit;font-size:15px}
+#of input:focus{outline:2px solid var(--ac);border-color:var(--ac)}.fr2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.dvs{display:flex;gap:8px}.dc{flex:1;position:relative}.dc input{position:absolute;opacity:0;pointer-events:none}.dc span{display:block;text-align:center;padding:11px 6px;border:1px solid var(--ln);border-radius:6px;cursor:pointer;font-size:14px;font-weight:600}.dc input:checked+span{border-color:var(--ac);background:rgba(255,59,48,.14);color:#fff}
+#pk{padding:10px 12px;border:1px dashed var(--ln);border-radius:6px;color:var(--mut);font-size:13px}
+.hp{position:absolute!important;left:-9999px;width:1px;height:1px;opacity:0}
+#oerr{padding:9px 12px;border-radius:6px;background:rgba(255,59,48,.14);color:#ffb4ae;font-size:13px}
+.buy2{width:100%;justify-content:center;padding:14px;font-size:16px}.pn{margin:2px 0 0;color:#7c7f87;font-size:12px}
+#bmok{text-align:center;padding:6px 0 2px}.okc{width:54px;height:54px;border-radius:50%;background:#16c47a;color:#04210f;font-size:30px;font-weight:800;display:grid;place-items:center;margin:0 auto 10px}
+#bmok h4{margin:0 0 6px;font-size:20px}#bmok p{margin:0 0 6px;color:var(--mut);font-size:14px}#bmok .sum{color:var(--tx);font-weight:600}#bmok .demo{color:#ffcf4d;font-size:12px}
 </style><style>.ph{aspect-ratio:4/3}</style><style id="gen"></style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Де купити ігровий ноутбук б/у в Києві?", "acceptedAnswer": {"@type": "Answer", "text": "KyivLaptop продає перевірені б/у ігрові ноутбуки (игровые ноутбуки бу) MSI, Asus ROG, Lenovo Legion, Dell та Acer. Самовивіз у Києві на Троєщині (вул. Лісківська, 37, Деснянський район), відправка Новою Поштою по всій Україні."}}, {"@type": "Question", "name": "Яка гарантія на ноутбук?", "acceptedAnswer": {"@type": "Answer", "text": "Гарантія 1 місяць на працездатність ноутбука."}}, {"@type": "Question", "name": "Як відбувається доставка й оплата?", "acceptedAnswer": {"@type": "Answer", "text": "Нова Пошта: накладений платіж із передоплатою 500 грн або повна оплата на рахунок ФОП, і тоді доставка безкоштовна. По Києву: самовивіз або відправка таксі."}}, {"@type": "Question", "name": "Чи можна перевірити ноутбук перед покупкою?", "acceptedAnswer": {"@type": "Answer", "text": "Так. Ноутбук можна перевірити при отриманні у відділенні Нової Пошти та при самовивозі в Києві."}}, {"@type": "Question", "name": "Що входить у комплект?", "acceptedAnswer": {"@type": "Answer", "text": "Ігрова миша з підсвічуванням, килимок для миші та блок живлення (зарядка) для ноутбука."}}, {"@type": "Question", "name": "Чи є trade-in та викуп ноутбуків?", "acceptedAnswer": {"@type": "Answer", "text": "Так. Ви надсилаєте нам свій ноутбук, ми його перевіряємо й відправляємо обраний вами."}}, {"@type": "Question", "name": "У якому стані ноутбуки?", "acceptedAnswer": {"@type": "Answer", "text": "Усі ноутбуки б/у з Європи та США. У кожній картці вказано зовнішній і технічний стан за 10-бальною шкалою. Усі ноутбуки налаштовані та готові до роботи."}}, {"@type": "Question", "name": "Як зв'язатися з магазином?", "acceptedAnswer": {"@type": "Answer", "text": "Viber, Telegram, WhatsApp або дзвінок: 0932281678 (WhatsApp +353 87 398 7441). Працюємо цілодобово."}}]}</script></head><body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
 <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
@@ -279,7 +289,24 @@ button.gp{border:0;cursor:pointer;font:inherit;font-weight:700;font-size:12px;te
 </div></main>
 <footer><div class="w">kyivlaptop · Київ, вул. Лісківська, 37 · працюємо цілодобово<p class="seo">Продаж ігрових ноутбуків б/у (игровые ноутбуки бу) у Києві та по всій Україні: MSI, Asus ROG, Lenovo Legion, Dell, Acer Nitro. Купити ноутбук із гарантією.</p></div></footer>
 <div id="lb"><button class="lbx" aria-label="Закрити">&times;</button><button class="lbp" aria-label="Попереднє фото">&lsaquo;</button><img id="lbi" alt=""><button class="lbn" aria-label="Наступне фото">&rsaquo;</button><div class="lbc" id="lbc"></div><div class="lbt" id="lbt"></div></div>
-<div id="bm"><div class="bmc"><button class="bmx" aria-label="Закрити">&times;</button><h3 id="bmt"></h3><p>Напишіть нам у зручному месенджері й вкажіть номер ноутбука. Відповімо з фото та деталями.</p><div class="bml"><a class="btn tg" id="bt" href="#"><svg class="i f"><use href="#i-tg"/></svg> Telegram</a><a class="btn vb" href="viber://chat?number=%2B380932281678"><svg class="i f"><use href="#i-vb"/></svg> Viber</a><a class="btn wa" id="bw" href="#"><svg class="i f"><use href="#i-wa"/></svg> WhatsApp</a><a class="btn o" href="tel:+380932281678"><svg class="i"><use href="#i-phone"/></svg> Подзвонити 0932281678</a></div><button class="lnk" id="bc">Скопіювати повідомлення</button></div></div><div id="toast" role="status"></div>
+<div id="bm"><div class="bmc"><button class="bmx" aria-label="Закрити">&times;</button><h3 id="bmt"></h3>
+<div id="bmf"><p class="bmp">Залиште дані, і ми зв'яжемося з вами, щоб підтвердити замовлення.</p>
+<form id="of" novalidate>
+<div class="fr2"><input name="name" placeholder="Ім'я" autocomplete="given-name" required><input name="surname" placeholder="Прізвище" autocomplete="family-name"></div>
+<input name="phone" type="tel" placeholder="Телефон, наприклад 093 228 16 78" autocomplete="tel" required>
+<div class="dvs"><label class="dc"><input type="radio" name="dv" value="np" checked><span>Нова Пошта</span></label><label class="dc"><input type="radio" name="dv" value="pickup"><span>Самовивіз (Київ)</span></label></div>
+<input name="np" id="npf" placeholder="Місто та відділення Нової Пошти" autocomplete="off">
+<div id="pk" hidden>Самовивіз: Київ, вул. Лісківська, 37 (Троєщина). Час домовимось після підтвердження.</div>
+<input name="note" placeholder="Коментар (необов'язково)">
+<input name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div id="oerr" hidden></div>
+<button class="btn buy2" type="submit" id="osb">Оформити замовлення</button>
+<p class="pn">Дані використовуються лише для зв'язку щодо замовлення.</p>
+</form></div>
+<div id="bmok" hidden><div class="okc">&#10003;</div><h4>Замовлення оформлено</h4><p>Ми зв'яжемося з вами найближчим часом і підтвердимо замовлення.</p><p class="sum" id="osum"></p><p class="demo" id="odemo" hidden>Це перегляд: на справжньому сайті замовлення одразу прийде власнику в Telegram.</p></div>
+<p class="bmo">Або зв'яжіться з нами напряму:</p>
+<div class="bml"><a class="btn tg" id="bt" href="#"><svg class="i f"><use href="#i-tg"/></svg> Telegram</a><a class="btn vb" href="viber://chat?number=%2B380932281678"><svg class="i f"><use href="#i-vb"/></svg> Viber</a><a class="btn wa" id="bw" href="#"><svg class="i f"><use href="#i-wa"/></svg> WhatsApp</a><a class="btn o" href="tel:+380932281678"><svg class="i"><use href="#i-phone"/></svg> Подзвонити 0932281678</a></div>
+<button class="lnk" id="bc">Скопіювати повідомлення</button></div></div><div id="toast" role="status"></div>
 <script src="config.js"></script>
 <script src="products.js"></script>
 <script src="reviews.js"></script>
@@ -352,7 +379,7 @@ document.addEventListener("click",function(e){var a=e.target.closest&&e.target.c
 /* ---- кнопка "Купити" ---- */
 var bm=$("bm"),bmsg="";
 document.addEventListener("click",function(e){var t=e.target,b=t.closest&&t.closest(".buy");
- if(b){var x=L.filter(function(y){return y.id==b.getAttribute("data-id")})[0];bmsg="Доброго дня! Хочу купити ноутбук #"+pad(x.id)+" ("+x.n+")";track("buy_click",{id:x.id,name:x.n});$("bmt").textContent=x.n+" #"+pad(x.id);$("bt").href="https://t.me/+380932281678?text="+encodeURIComponent(bmsg);$("bw").href="https://wa.me/353873987441?text="+encodeURIComponent(bmsg);bm.className="on";return}
+ if(b){var x=L.filter(function(y){return y.id==b.getAttribute("data-id")})[0];bmsg="Доброго дня! Хочу купити ноутбук #"+pad(x.id)+" ("+x.n+")";track("buy_click",{id:x.id,name:x.n});$("bmt").textContent=x.n+" #"+pad(x.id);$("bt").href="https://t.me/+380932281678?text="+encodeURIComponent(bmsg);$("bw").href="https://wa.me/353873987441?text="+encodeURIComponent(bmsg);openOrder(x);bm.className="on";return}
  if(bm.className=="on"&&(t===bm||t.closest(".bmx")))bm.className=""});
 $("bc").onclick=function(){cp(bmsg);toast("Повідомлення скопійовано")};
 document.addEventListener("keydown",function(e){if(e.key=="Escape")bm.className=""});
@@ -361,4 +388,21 @@ document.addEventListener("keydown",function(e){if(e.key=="Escape")bm.className=
 document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest('a[href^="viber:"]');if(!a)return;e.preventDefault();var left=false,m=function(){left=true};window.addEventListener("blur",m,{once:true});document.addEventListener("visibilitychange",m,{once:true});location.href=a.getAttribute("href");setTimeout(function(){window.removeEventListener("blur",m);if(!left){cp("0932281678");toast("Viber не відкрився. Номер 0932281678 скопійовано, додайте його у Viber")}},1600)});
 function cp(t){try{navigator.clipboard.writeText(t).catch(function(){})}catch(_){}}
 document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a[href]");if(!a)return;var u=a.getAttribute("href"),m=/t\.me/.test(u)?"telegram":/wa\.me/.test(u)?"whatsapp":/^viber:/.test(u)?"viber":/^tel:/.test(u)?"phone":/olx\.ua/.test(u)?"olx":/tiktok/.test(u)?"tiktok":"";if(m)track("contact_click",{method:m})});
+
+/* ---- оформлення замовлення ---- */
+var DEMO=!/(^|\.)kyivlaptop\.biz\.ua$|vercel\.app$|^localhost$|^127\.0\.0\.1$/.test(location.hostname),curX=null,of=$("of");
+function openOrder(x){curX=x;of.reset();$("bmf").hidden=false;$("bmok").hidden=true;$("oerr").hidden=true;$("osb").disabled=false;$("osb").textContent="Оформити замовлення";dvSwitch()}
+function dvSwitch(){var np=of.dv.value==="np";$("npf").hidden=!np;$("pk").hidden=np}
+of.addEventListener("change",function(e){if(e.target.name==="dv")dvSwitch()});
+function oerr(t){var o=$("oerr");o.textContent=t;o.hidden=false}
+of.addEventListener("submit",function(e){e.preventDefault();var f=of.elements,np=f.dv.value==="np",ph=f.phone.value.replace(/\D/g,"");
+ if(f.name.value.trim().length<2)return oerr("Вкажіть, будь ласка, ім'я.");
+ if(ph.length<9)return oerr("Вкажіть номер телефону, щоб ми могли зв'язатися.");
+ if(np&&f.np.value.trim().length<3)return oerr("Вкажіть місто та відділення Нової Пошти.");
+ $("oerr").hidden=true;var b=$("osb");b.disabled=true;b.textContent="Надсилаємо...";
+ var data={id:curX.id,product:curX.n,price:curX.price,name:f.name.value.trim(),surname:f.surname.value.trim(),phone:f.phone.value.trim(),delivery:f.dv.value,np:f.np.value.trim(),note:f.note.value.trim(),website:f.website.value};
+ function done(){track("order_submit",{id:curX.id});$("bmf").hidden=true;$("bmok").hidden=false;$("osum").textContent=curX.n+" #"+pad(curX.id)+(curX.price?", "+curX.price.toLocaleString("uk-UA")+" грн":"");$("odemo").hidden=!DEMO}
+ function fail(){b.disabled=false;b.textContent="Оформити замовлення";oerr("Не вдалося надіслати замовлення. Напишіть нам у месенджері нижче, або спробуйте ще раз.")}
+ if(DEMO){setTimeout(done,500);return}
+ fetch("/api/order",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)}).then(function(r){return r.json()}).then(function(j){j&&j.ok?done():fail()}).catch(fail)});
 </script></body></html>
