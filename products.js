@@ -9,7 +9,7 @@
 // Щоб вказати інше значення, додайте у рядок vram:4 . gift:false - прибрати плашку подарунка. price:null - "Ціна за запитом".
 var COND="Зовні 9.5/10, технічно 10/10";
 var L=[
-{id:122,b:"Dell",n:"Dell 15 Gaming",cpu:"Intel Core i7, 8 ядер",gpu:"Nvidia GeForce GTX",ram:"16 ГБ",disk:"SSD 128 ГБ + HDD 1 ТБ",scr:"15.6",price:25000,cond:"Зовні 10/10, технічно 10/10",photos:["images/122.jpg","images/122-2.jpg"]},
+{id:122,b:"Dell",n:"Dell 15 Gaming Pro",cpu:"Intel Core i7, 8 ядер",gpu:"Nvidia GeForce GTX",ram:"16 ГБ",disk:"SSD 128 ГБ + HDD 1 ТБ",scr:"15.6",price:25000,cond:"Зовні 10/10, технічно 10/10",photos:["images/122.jpg","images/122-2.jpg"]},
 {id:097,b:"MSI",n:"MSI TITAN 18",cpu:"Intel Core i7, 8 ядер",gpu:"Nvidia GeForce GTX",ram:"24 ГБ",disk:"SSD 512 ГБ + HDD 1 ТБ",scr:"18.4",price:35000,cond:"Зовні 10/10, технічно 10/10",sold:"Продано",photos:["images/097.jpg","images/097-2.jpg","images/097-3.jpg","images/097-4.jpg","images/097-5.jpg"]},
 {id:69,b:"MSI",n:"MSI Raider 15",cpu:"Intel Core i7, 8 ядер",gpu:"Nvidia GeForce GTX",ram:"16 ГБ",disk:"SSD 128 ГБ + HDD 500 ГБ",scr:"15.6",price:25000,cond:"Зовні 9.5/10, технічно 10/10",sold:"Відправлено",photos:["images/069.jpg","images/069-2.jpg","images/069-3.jpg","images/069-4.jpg","images/069-5.jpg"]},
 {id:80,b:"MSI",n:"MSI Raider 15",cpu:"Intel Core i7, 8 ядер",gpu:"Nvidia GeForce GTX",ram:"8 ГБ",disk:"SSD 256 ГБ",scr:"15.6",price:22500,cond:"Зовні 10/10, технічно 10/10",photos:["images/080.jpg","images/080-2.jpg","images/080-3.jpg"]},
