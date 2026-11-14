@@ -253,6 +253,59 @@ button.gp{padding:6px 8px}.gp .i{width:17px;height:17px}
 @media(max-width:620px){.hero{padding:16px 14px 14px;margin-top:10px}.hero h1{font-size:24px}.hero p{margin:8px 0 12px;font-size:14px}.hm{display:none}.hb .main{padding:13px 12px;font-size:15px}.hb .sec{padding:13px 12px}}
 .dq{border-top:1px solid var(--ln);padding-top:12px;color:var(--mut);font-size:13px}.dql{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}.dql .btn{padding:9px 12px;font-size:13px}
 .soldbox summary{gap:0}
+
+/* === мобільний перегляд ноутбука === */
+.dmc{display:grid;grid-template-columns:1.15fr 1fr;grid-template-rows:auto 1fr auto;align-items:start}
+.dmh{position:sticky;top:0;z-index:7;grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;background:rgba(20,20,22,.9);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid var(--ln)}
+.dmh .dmx{position:static;width:auto;height:44px;border-radius:22px;padding:0 18px 0 10px;display:inline-flex;align-items:center;gap:2px;font:inherit;font-size:15px;font-weight:700;background:#2a2b2f;color:#fff;border:1px solid #fff2}.dmh .dmx .chv{font-size:30px;line-height:1;margin-top:-3px}
+.dmh .shr{height:44px;padding:0 14px;font-size:14px;border-radius:22px}
+.dml{grid-column:1;display:flex;flex-direction:column;min-width:0;background:var(--bg2)}.dmb{grid-column:2;position:static;padding:18px 20px 12px;gap:10px}
+.dcta{position:sticky;bottom:0;z-index:7;grid-column:1/-1;display:flex;align-items:center;gap:14px;padding:12px 16px;background:rgba(20,20,22,.94);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-top:1px solid var(--ln)}
+.dcta .dpr{flex:none}.dcta .dpr strong{font-size:26px}.dcta .btn{flex:1;justify-content:center;padding:15px;font-size:17px;box-shadow:0 0 24px #ff3b3055}.dcta .btn.off{box-shadow:none}
+.dmb h2{font-size:22px;line-height:1.15;margin:0;padding:0}
+.sg2{display:grid;grid-template-columns:1fr 1fr;gap:8px}.sp2{display:flex;gap:9px;align-items:center;padding:9px 10px;background:#1d1d21;border:1px solid var(--ln);border-radius:9px;min-width:0}.sp2 .i{flex:none;width:20px;height:20px;color:var(--cy)}.sp2 span{font-size:13.5px;font-weight:600;line-height:1.25;min-width:0;overflow-wrap:anywhere}.sp2 small{display:block;font-size:11px;font-weight:500;color:var(--mut);margin-bottom:1px}
+.sg2 .sp2:last-child:nth-child(odd){grid-column:1/-1}
+.gf3{display:flex;gap:9px;align-items:center;padding:8px 11px;border:1px solid #ffb70055;background:#ffb7000f;border-radius:9px;color:#ffcf4d;font-size:13px;line-height:1.3}.gf3 .i{flex:none;width:19px;height:19px}.gf3 b{color:#ffcf4d}
+.dmd{padding:6px 20px 22px}.dclamp{position:relative;overflow:hidden;transition:max-height .45s cubic-bezier(.32,.72,0,1)}
+.dmore{background:none;border:0;color:var(--cy);font:inherit;font-weight:600;font-size:14px;padding:4px 0 10px;cursor:pointer}
+.dots{position:absolute;left:50%;bottom:10px;transform:translateX(-50%);display:none;gap:6px;z-index:2}.dot{width:7px;height:7px;border-radius:50%;background:#fff6;transition:all .25s}.dot.on{background:#fff;width:18px;border-radius:4px}
+@media(max-width:760px){
+ .dmc{grid-template-columns:1fr;grid-template-rows:none;margin:0;border:0;border-radius:0;min-height:100%}
+ .dml{display:contents}.dmg{order:1}.dmb{order:2;grid-column:1;padding:14px 16px 6px}.dmd{order:3;grid-column:1;padding:4px 16px 18px;background:none}.dcta{order:4}
+ .dmm{aspect-ratio:4/3;max-height:40vh;width:100%}.dmt{display:none}.dots{display:flex}.dmm .pc{display:none}
+ .dclamp{max-height:7.4em}.dclamp.open{max-height:90em}.dmb h2{font-size:20px}
+ .dcta{padding:10px 14px}.dcta .dpr strong{font-size:23px}
+}
+@media(min-width:761px){.dclamp{max-height:none!important}.dmore{display:none}}
+/* === форма замовлення (шторка) === */
+.bmh{position:sticky;top:0;z-index:4;display:flex;align-items:center;justify-content:space-between;gap:10px;margin:-22px -20px 12px;padding:14px 14px 12px 20px;background:var(--bg2);border-bottom:1px solid var(--ln)}
+.bmh h3{margin:0;padding:0;font-size:17px;line-height:1.2}
+.bmc .bmx{position:static;flex:none;width:46px;height:46px;border-radius:50%;background:#2a2b2f;color:#fff;font-size:28px;line-height:1;display:grid;place-items:center;border:1px solid #fff2;padding:0}
+.bmprod{display:flex;gap:12px;align-items:center;padding:10px;border:1px solid var(--ln);border-radius:10px;margin-bottom:14px;background:var(--bg)}.bmprod img{width:66px;height:50px;object-fit:cover;border-radius:6px;flex:none}.bmprod b{display:block;font-size:14px}.bmprod span{color:var(--mut);font-size:13px}.bmprod strong{margin-left:auto;font-size:17px;white-space:nowrap}
+.bml{display:grid!important;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:10px}.bml .btn{flex-direction:column;justify-content:center;gap:6px;padding:12px 4px;font-size:12px;text-align:center;border-radius:10px}.bml .btn .i{width:22px;height:22px}
+.bmo{margin:16px 0 8px}
+/* === плавність (як на iPhone) === */
+#dm,#bm,#lb{display:block;visibility:hidden;opacity:0;pointer-events:none;transition:opacity .3s cubic-bezier(.32,.72,0,1),visibility 0s linear .3s}
+#bm,#lb{display:flex}
+#dm.on,#bm.on,#lb.on{visibility:visible;opacity:1;pointer-events:auto;transition:opacity .3s cubic-bezier(.32,.72,0,1),visibility 0s}
+.dmc{transform:translateY(34px) scale(.985);transition:transform .45s cubic-bezier(.32,.72,0,1)}#dm.on .dmc{transform:none}
+.bmc{transform:translateY(60px);transition:transform .45s cubic-bezier(.32,.72,0,1)}#bm.on .bmc{transform:none}
+#lb img{transition:opacity .3s}
+.ph img,.dmm img{transition:opacity .28s ease}.sw{opacity:0!important}
+.card{animation:cin .5s cubic-bezier(.2,.8,.2,1) both;transition:transform .3s cubic-bezier(.32,.72,0,1),border-color .25s,box-shadow .3s}
+@keyframes cin{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media(hover:hover){.card:hover{transform:translateY(-3px);border-color:#44454b}}
+.btn{transition:transform .18s cubic-bezier(.32,.72,0,1),filter .2s,box-shadow .25s}.btn:active{transform:scale(.965)}.btn:hover{filter:brightness(1.08)}
+.chips button,.chips label,.vt label,.shr,.dc span{transition:background .2s,border-color .2s,color .2s,transform .15s}.chips button:active{transform:scale(.96)}
+.hero h1,.hero p,.hb{animation:rise .8s cubic-bezier(.2,.8,.2,1) both}.hero p{animation-delay:.08s}.hb{animation-delay:.16s}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+:root{interpolate-size:allow-keywords}
+details::details-content{block-size:0;overflow:hidden;transition:block-size .38s cubic-bezier(.32,.72,0,1),content-visibility .38s allow-discrete}
+details[open]::details-content{block-size:auto}
+.dot,.dclamp{will-change:auto}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+@media(max-width:760px){.dmc{display:flex;flex-direction:column;align-items:stretch}.dmh{order:0}.dmb,.dmd{width:100%}}
+.dmc{overflow:clip}
 </style><style>.ph{aspect-ratio:4/3}</style><style id="gen"></style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Де купити ігровий ноутбук б/у в Києві?", "acceptedAnswer": {"@type": "Answer", "text": "KyivLaptop продає перевірені б/у ігрові ноутбуки (игровые ноутбуки бу) MSI, Asus ROG, Lenovo Legion, Dell та Acer. Самовивіз у Києві на Троєщині (вул. Лісківська, 37, Деснянський район), відправка Новою Поштою по всій Україні."}}, {"@type": "Question", "name": "Яка гарантія на ноутбук?", "acceptedAnswer": {"@type": "Answer", "text": "Гарантія 1 місяць на працездатність ноутбука."}}, {"@type": "Question", "name": "Як відбувається доставка й оплата?", "acceptedAnswer": {"@type": "Answer", "text": "Нова Пошта: накладений платіж із передоплатою 500 грн або повна оплата на рахунок ФОП, і тоді доставка безкоштовна. По Києву: самовивіз або відправка таксі."}}, {"@type": "Question", "name": "Чи можна перевірити ноутбук перед покупкою?", "acceptedAnswer": {"@type": "Answer", "text": "Так. Ноутбук можна перевірити при отриманні у відділенні Нової Пошти та при самовивозі в Києві."}}, {"@type": "Question", "name": "Що входить у комплект?", "acceptedAnswer": {"@type": "Answer", "text": "Ігрова миша з підсвічуванням, килимок для миші та блок живлення (зарядка) для ноутбука."}}, {"@type": "Question", "name": "Чи є trade-in та викуп ноутбуків?", "acceptedAnswer": {"@type": "Answer", "text": "Так. Ви надсилаєте нам свій ноутбук, ми його перевіряємо й відправляємо обраний вами."}}, {"@type": "Question", "name": "У якому стані ноутбуки?", "acceptedAnswer": {"@type": "Answer", "text": "Усі ноутбуки б/у з Європи та США. У кожній картці вказано зовнішній і технічний стан за 10-бальною шкалою. Усі ноутбуки налаштовані та готові до роботи."}}, {"@type": "Question", "name": "Як зв'язатися з магазином?", "acceptedAnswer": {"@type": "Answer", "text": "Viber, Telegram, WhatsApp або дзвінок: 0932281678 (WhatsApp +353 87 398 7441). Працюємо цілодобово."}}]}</script></head><body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
 <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
@@ -319,8 +372,13 @@ button.gp{padding:6px 8px}.gp .i{width:17px;height:17px}
 </div></main>
 <footer><div class="w">kyivlaptop · Київ, вул. Лісківська, 37 · працюємо цілодобово<p class="seo">Продаж ігрових ноутбуків б/у (игровые ноутбуки бу) у Києві та по всій Україні: MSI, Asus ROG, Lenovo Legion, Dell, Acer Nitro. Купити ноутбук із гарантією.</p></div></footer>
 <div id="lb"><button class="lbx" aria-label="Закрити">&times;</button><button class="lbp" aria-label="Попереднє фото">&lsaquo;</button><img id="lbi" alt=""><button class="lbn" aria-label="Наступне фото">&rsaquo;</button><div class="lbc" id="lbc"></div><div class="lbt" id="lbt"></div></div>
-<div id="dm"><div class="dmc"><button class="dmx" aria-label="Закрити">&times;</button><div class="dml"><div class="dmg" id="dmg"></div><div class="dmd dtx" id="dmd"></div></div><div class="dmb" id="dmb"></div></div></div>
-<div id="bm"><div class="bmc"><button class="bmx" aria-label="Закрити">&times;</button><h3 id="bmt"></h3>
+<div id="dm"><div class="dmc">
+<div class="dmh"><button class="dmx" aria-label="Закрити і повернутись до каталогу"><span class="chv">&lsaquo;</span>Назад</button><button type="button" class="shr cpl" id="dmsh"><svg class="i"><use href="#i-share"/></svg>Поділитися</button></div>
+<div class="dml"><div class="dmg" id="dmg"></div><div class="dmd dtx" id="dmd"></div></div>
+<div class="dmb" id="dmb"></div>
+<div class="dcta" id="dcta"></div>
+</div></div>
+<div id="bm"><div class="bmc"><div class="bmh"><h3 id="bmt"></h3><button class="bmx" aria-label="Закрити">&times;</button></div><div class="bmprod" id="bmprod"></div>
 <div id="bmf"><p class="bmp">Залиште дані, і ми зв'яжемося з вами, щоб підтвердити замовлення.</p>
 <form id="of" novalidate>
 <div class="fr2"><input name="name" placeholder="Ім'я" autocomplete="given-name" required><input name="surname" placeholder="Прізвище" autocomplete="family-name"></div>
@@ -336,7 +394,7 @@ button.gp{padding:6px 8px}.gp .i{width:17px;height:17px}
 </form></div>
 <div id="bmok" hidden><div class="okc">&#10003;</div><h4>Замовлення оформлено</h4><p>Ми зв'яжемося з вами найближчим часом і підтвердимо замовлення.</p><p class="sum" id="osum"></p><p class="demo" id="odemo" hidden>Це перегляд: на справжньому сайті замовлення одразу прийде власнику в Telegram.</p></div>
 <p class="bmo">Або зв'яжіться з нами напряму:</p>
-<div class="bml"><a class="btn tg" id="bt" href="#"><svg class="i f"><use href="#i-tg"/></svg> Telegram</a><a class="btn vb" href="viber://chat?number=%2B380932281678"><svg class="i f"><use href="#i-vb"/></svg> Viber</a><a class="btn wa" id="bw" href="#"><svg class="i f"><use href="#i-wa"/></svg> WhatsApp</a><a class="btn o" href="tel:+380932281678"><svg class="i"><use href="#i-phone"/></svg> Подзвонити 0932281678</a></div>
+<div class="bml"><a class="btn tg" id="bt" href="#"><svg class="i f"><use href="#i-tg"/></svg> Telegram</a><a class="btn vb" href="viber://chat?number=%2B380932281678"><svg class="i f"><use href="#i-vb"/></svg> Viber</a><a class="btn wa" id="bw" href="#"><svg class="i f"><use href="#i-wa"/></svg> WhatsApp</a><a class="btn o" href="tel:+380932281678"><svg class="i"><use href="#i-phone"/></svg> Дзвінок</a></div>
 <button class="lnk" id="bc">Скопіювати повідомлення</button></div></div><div id="toast" role="status"></div>
 <script src="config.js"></script>
 <script src="products.js"></script>
@@ -386,14 +444,14 @@ function apply(){
 document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest("#chips button,#fg button");if(b){var k=b.getAttribute("data-k"),v=b.getAttribute("data-v");F[k]=(F[k]===v&&k!=="b")?"":v;apply()}});
 $("srt").onchange=apply;$("rst").onclick=function(){F={b:"",gpuV:"",cpuF:"",ramB:"",dk:"",scr:""};$("srt").value="";apply()};
 apply();
-function goto(){var m=/^#(\d{1,3})$/.exec(location.hash)||/[?&]id=(\d+)/.exec(location.search);if(!m)return;var id=parseInt(m[1],10),c=document.querySelector('#catalog .card[data-id="'+id+'"]');if(!c)return;if(c.hidden){F={b:"",gpuV:"",cpuF:"",ramB:"",dk:"",scr:""};$("srt").value="";apply()}var sb=c.closest("details");if(sb)sb.open=true;setTimeout(function(){c.scrollIntoView({block:"center"});c.classList.add("hl");setTimeout(function(){c.classList.remove("hl")},7000);setTimeout(function(){openDetail(id)},500)},200)}
+function goto(){var m=/^#(\d{1,3})$/.exec(location.hash)||/[?&]id=(\d+)/.exec(location.search);if(!m)return;var id=parseInt(m[1],10),c=document.querySelector('#catalog .card[data-id="'+id+'"]');if(!c)return;if(c.hidden){F={b:"",gpuV:"",cpuF:"",ramB:"",dk:"",scr:""};$("srt").value="";apply()}var sb=c.closest("details");if(sb)sb.open=true;setTimeout(function(){c.scrollIntoView({block:"center"});c.classList.add("hl");setTimeout(function(){c.classList.remove("hl")},7000)},200)}
 goto();window.addEventListener("hashchange",goto);
 /* ---- галерея ---- */
 var gl={a:[],i:0},lb=$("lb"),lbi=$("lbi");
 function gshow(i){gl.i=(i+gl.a.length)%gl.a.length;lbi.src=gl.a[gl.i];$("lbc").textContent=(gl.i+1)+" / "+gl.a.length;[].forEach.call($("lbt").children,function(t,k){t.className=k==gl.i?"on":""})}
 function gopen(id){var x=L.filter(function(y){return y.id==id})[0];if(!x||!x.photos||!x.photos.length)return;gl.a=x.photos;$("lbt").innerHTML=gl.a.length>1?gl.a.map(function(p,k){return '<img data-k="'+k+'" src="'+esc(p)+'" alt="">'}).join(""):"";lb.className="on";gshow(cur[id]||0);var one=gl.a.length<2;lb.querySelector(".lbp").hidden=one;lb.querySelector(".lbn").hidden=one;$("lbc").hidden=one}
 var cur={};
-function step(id,d){var x=L.filter(function(y){return y.id==id})[0];if(!x||!x.photos||x.photos.length<2)return;var n=x.photos.length;cur[id]=(((cur[id]||0)+d)%n+n)%n;var c=document.querySelector('#catalog .card[data-id="'+id+'"]');c.querySelector(".ph img").src=x.photos[cur[id]];c.querySelector(".pc b").textContent=(cur[id]+1)+"/"+n}
+function step(id,d){var x=L.filter(function(y){return y.id==id})[0];if(!x||!x.photos||x.photos.length<2)return;var n=x.photos.length;cur[id]=(((cur[id]||0)+d)%n+n)%n;var c=document.querySelector('#catalog .card[data-id="'+id+'"]');fadeSrc(c.querySelector(".ph img"),x.photos[cur[id]]);c.querySelector(".pc b").textContent=(cur[id]+1)+"/"+n}
 var sx=0,sy=0;$("catalog").addEventListener("touchstart",function(e){sx=e.touches[0].clientX;sy=e.touches[0].clientY},{passive:true});
 $("catalog").addEventListener("touchend",function(e){var p=e.target.closest&&e.target.closest(".ph");if(!p||!p.getAttribute("data-id"))return;var dx=e.changedTouches[0].clientX-sx,dy=e.changedTouches[0].clientY-sy;if(Math.abs(dx)>40&&Math.abs(dx)>Math.abs(dy)*1.5)step(p.getAttribute("data-id"),dx<0?1:-1)});
 function gclose(){lb.className=""}
@@ -423,7 +481,7 @@ document.addEventListener("click",function(e){var a=e.target.closest&&e.target.c
 
 /* ---- оформлення замовлення ---- */
 var DEMO=!/(^|\.)kyivlaptop\.biz\.ua$|vercel\.app$|^localhost$|^127\.0\.0\.1$/.test(location.hostname),curX=null,of=$("of");
-function openOrder(x){curX=x;of.reset();$("bmf").hidden=false;$("bmok").hidden=true;$("oerr").hidden=true;$("osb").disabled=false;$("osb").textContent="Оформити замовлення";dvSwitch()}
+function openOrder(x){curX=x;$("bmprod").innerHTML=(x.photos&&x.photos[0]?'<img src="'+esc(x.photos[0])+'" alt="">':"")+'<div><b>'+esc(x.n)+'</b><span>#'+pad(x.id)+'</span></div>'+(x.price?'<strong>'+x.price.toLocaleString("uk-UA")+' грн</strong>':"");of.reset();$("bmf").hidden=false;$("bmok").hidden=true;$("oerr").hidden=true;$("osb").disabled=false;$("osb").textContent="Оформити замовлення";dvSwitch()}
 function dvSwitch(){var np=of.dv.value==="np";$("npf").hidden=!np;$("pk").hidden=np}
 of.addEventListener("change",function(e){if(e.target.name==="dv")dvSwitch()});
 function oerr(t){var o=$("oerr");o.textContent=t;o.hidden=false}
@@ -444,27 +502,31 @@ function shareLink(id){var x=L.filter(function(y){return y.id==id})[0],u=locatio
  track("share_link",{id:id})}
 /* ---- сторінка ноутбука ---- */
 var dm=$("dm"),dI=0,dX=null,DEF="Ігровий ноутбук б/у з Європи та США. Перевірений технічно, налаштований і готовий до роботи.\nУ комплекті подарунок: ігрова миша з RGB-підсвічуванням, килимок для миші та блок живлення.\nЗабрати можна в Києві (Троєщина), також можлива відправка таксі по Києву. Відправляємо Новою Поштою по всій Україні.\nНоутбук можна перевірити при отриманні. Гарантія 1 місяць на працездатність, є trade-in та викуп.";
+function fadeSrc(im,src){if(!im)return;im.classList.add("sw");var t=new Image();t.onload=t.onerror=function(){im.src=src;requestAnimationFrame(function(){im.classList.remove("sw")})};t.src=src}
+function dmUpd(){var n=(dX.photos||[]).length;fadeSrc($("dmi"),dX.photos[dI]);var c=$("dmcn");if(c)c.textContent=(dI+1)+"/"+n;[].forEach.call(document.querySelectorAll("#dmg [data-dk]"),function(e){e.classList.toggle("on",+e.getAttribute("data-dk")===dI)})}
 function dmRender(){var x=dX,ph=x.photos||[],n=ph.length;
- var g='<div class="dmm">'+(n?'<img id="dmi" src="'+esc(ph[dI])+'" alt="'+esc(x.n)+'">':'<div class="dmn">'+esc(x.b)+'</div>')+(n>1?'<button class="dma l" data-d="-1" aria-label="Попереднє фото">&lsaquo;</button><button class="dma r" data-d="1" aria-label="Наступне фото">&rsaquo;</button><span class="pc"><svg class="i"><use href="#i-grid"/></svg><b>'+(dI+1)+'/'+n+'</b></span>':'')+(x.sold?'<span class="sp">'+esc(x.sold)+'</span>':'')+'</div>';
+ var g='<div class="dmm">'+(n?'<img id="dmi" src="'+esc(ph[dI])+'" alt="'+esc(x.n)+'">':'<div class="dmn">'+esc(x.b)+'</div>')+(n>1?'<button class="dma l" data-d="-1" aria-label="Попереднє фото">&lsaquo;</button><button class="dma r" data-d="1" aria-label="Наступне фото">&rsaquo;</button><span class="pc"><svg class="i"><use href="#i-grid"/></svg><b id="dmcn">'+(dI+1)+'/'+n+'</b></span><span class="dots">'+ph.map(function(p,k){return '<i class="dot'+(k==dI?' on':'')+'" data-dk="'+k+'"></i>'}).join("")+'</span>':'')+(x.sold?'<span class="sp">'+esc(x.sold)+'</span>':'')+'</div>';
  if(n>1)g+='<div class="dmt">'+ph.map(function(p,k){return '<img data-dk="'+k+'" class="'+(k==dI?"on":"")+'" src="'+esc(p)+'" alt="">'}).join("")+'</div>';
  $("dmg").innerHTML=g;
- var d=function(ic,t,v){return '<dt><svg class="i"><use href="#i-'+ic+'"/></svg>'+t+'</dt><dd>'+esc(v)+'</dd>'};
- var pr=x.price?'<strong>'+x.price.toLocaleString("uk-UA")+'<span class="cur">грн</span></strong>':'<strong>Ціна за запитом</strong>';
- var b='<h2>'+esc(x.n)+'</h2><div class="idr"><span class="id">#'+pad(x.id)+'</span><button type="button" class="shr cpl" data-id="'+x.id+'"><svg class="i"><use href="#i-share"/></svg>Поділитися</button></div>'+
- '<div class="dpr">'+pr+'</div><dl class="dd2">'+(x.scr?d("scr","Діагональ",x.scr+'"'):"")+d("cpu","Процесор",x.cpu)+d("gpu","Відеокарта",x.gpu)+d("ram","Оперативна пам'ять",x.ram)+d("disk","Диск",x.disk)+'</dl>'+
+ var T=function(ic,l,v){return '<div class="sp2"><svg class="i"><use href="#i-'+ic+'"/></svg><span><small>'+l+'</small>'+esc(v)+'</span></div>'};
+ $("dmb").innerHTML='<h2>'+esc(x.n)+'</h2><div class="idr"><span class="id">#'+pad(x.id)+'</span></div><div class="sg2">'+(x.scr?T("scr","Діагональ",x.scr+'"'):"")+T("cpu","Процесор",x.cpu)+T("gpu","Відеокарта",x.gpu)+T("ram","Оперативна пам'ять",x.ram)+T("disk","Диск",x.disk)+'</div>'+
  '<div class="cn"><span>Стан</span><div class="cnr">'+(x.cond||COND).split(/,\s*/).map(function(t){return '<b>'+esc(t.charAt(0).toUpperCase()+t.slice(1))+'</b>'}).join('')+'</div></div>'+
- (x.gift===false||x.sold?'':'<div class="gf2"><svg class="i"><use href="#i-gift"/></svg><span><b>У подарунок:</b> ігрова миша RGB, килимок для миші, блок живлення</span></div>')+
-  '<div class="dact">'+(x.sold?'<span class="btn off">'+esc(x.sold)+'</span>':'<button class="btn buy" data-id="'+x.id+'">Купити</button>')+'</div>'+
+ (x.gift===false||x.sold?'':'<div class="gf3"><svg class="i"><use href="#i-gift"/></svg><span><b>Подарунок:</b> миша RGB · килимок · блок живлення</span></div>');
+ var q=encodeURIComponent("Доброго дня! Питання щодо ноутбука #"+pad(x.id)+" ("+x.n+")"),I=function(n){return '<svg class="i f"><use href="#i-'+n+'"/></svg>'};
+ $("dmd").innerHTML='<h4>Опис</h4><div class="dclamp" id="dcl">'+(x.desc||DEF).split(/\n+/).map(function(s){return '<p>'+esc(s)+'</p>'}).join("")+'</div><button type="button" class="dmore" id="dmore">Читати повністю</button>'+
  (x.olx&&!x.sold?'<a class="olxl" href="'+esc(x.olx)+'" target="_blank" rel="noopener">Оголошення на OLX</a>':'')+
- (function(){var q=encodeURIComponent("Доброго дня! Питання щодо ноутбука #"+pad(x.id)+" ("+x.n+")"),I=function(n){return '<svg class="i f"><use href="#i-'+n+'"/></svg>'};return '<div class="dq"><span>Є питання про цей ноутбук? Напишіть нам:</span><div class="dql"><a class="btn tg" href="https://t.me/+380932281678?text='+q+'">'+I("tg")+' Telegram</a><a class="btn vb" href="viber://chat?number=%2B380932281678">'+I("vb")+' Viber</a><a class="btn wa" href="https://wa.me/353873987441?text='+q+'">'+I("wa")+' WhatsApp</a></div></div>'})();
- $("dmb").innerHTML=b;$("dmd").innerHTML='<h4>Опис</h4>'+(x.desc||DEF).split(/\n+/).map(function(s){return '<p>'+esc(s)+'</p>'}).join("")}
+ '<div class="dq"><span>Є питання про цей ноутбук? Напишіть нам:</span><div class="dql"><a class="btn tg" href="https://t.me/+380932281678?text='+q+'">'+I("tg")+' Telegram</a><a class="btn vb" href="viber://chat?number=%2B380932281678">'+I("vb")+' Viber</a><a class="btn wa" href="https://wa.me/353873987441?text='+q+'">'+I("wa")+' WhatsApp</a></div></div>';
+ $("dcta").innerHTML='<div class="dpr">'+(x.price?'<strong>'+x.price.toLocaleString("uk-UA")+'<span class="cur">грн</span></strong>':'<strong>Ціна за запитом</strong>')+'</div>'+(x.sold?'<span class="btn off">'+esc(x.sold)+'</span>':'<button class="btn buy" data-id="'+x.id+'">Купити</button>');
+ $("dmsh").setAttribute("data-id",x.id);
+ var cl=$("dcl");setTimeout(function(){$("dmore").hidden=cl.scrollHeight<=cl.clientHeight+4},60)}
 function openDetail(id){var x=L.filter(function(y){return y.id==id})[0];if(!x)return;dX=x;dI=0;dmRender();dm.className="on";dm.scrollTop=0;document.body.style.overflow="hidden";try{history.replaceState(null,"",location.pathname+location.search+"#"+pad(x.id))}catch(_){}track("view_item",{id:x.id,name:x.n})}
 function closeDetail(){dm.className="";document.body.style.overflow="";try{history.replaceState(null,"",location.pathname+location.search)}catch(_){}}
-function dmStep(d){var n=(dX.photos||[]).length;if(n<2)return;dI=(dI+d+n)%n;dmRender()}
+function dmStep(d){var n=(dX.photos||[]).length;if(n<2)return;dI=(dI+d+n)%n;dmUpd()}
 document.addEventListener("click",function(e){if(dm.className!=="on"||lb.className==="on"||bm.className==="on")return;var t=e.target;
  if(t===dm||t.closest(".dmx")){closeDetail();return}
  var a=t.closest(".dma");if(a){dmStep(+a.getAttribute("data-d"));return}
- var th=t.closest("[data-dk]");if(th){dI=+th.getAttribute("data-dk");dmRender();return}
+ var th=t.closest("[data-dk]");if(th){dI=+th.getAttribute("data-dk");dmUpd();return}
+ var mo=t.closest("#dmore");if(mo){var c=$("dcl");c.classList.toggle("open");mo.textContent=c.classList.contains("open")?"Згорнути":"Читати повністю";return}
  if(t.id==="dmi"){cur[dX.id]=dI;gopen(dX.id)}});
 document.addEventListener("keydown",function(e){if(dm.className!=="on"||lb.className==="on"||bm.className==="on")return;if(e.key==="Escape")closeDetail();if(e.key==="ArrowLeft")dmStep(-1);if(e.key==="ArrowRight")dmStep(1)});
 var dsx=0;$("dmg").addEventListener("touchstart",function(e){dsx=e.touches[0].clientX},{passive:true});$("dmg").addEventListener("touchend",function(e){var d=e.changedTouches[0].clientX-dsx;if(Math.abs(d)>40)dmStep(d<0?1:-1)});
