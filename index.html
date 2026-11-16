@@ -421,7 +421,7 @@ $("rv").innerHTML=R.map(rc).join("");$("rvc").innerHTML=R.length;
 function toGB(s){var t=0;String(s).replace(/(\d+(?:[.,]\d+)?)\s*(ТБ|ГБ)/g,function(_,n,u){t+=parseFloat(n.replace(",","."))*(u=="ТБ"?1000:1)});return t}
 L.forEach(function(x,i){x.i=i;x.ramN=parseInt(x.ram)||0;
  var m=/i([3579])/i.exec(x.cpu);x.cpuF=/intel/i.test(x.cpu)?("Intel Core i"+(m?m[1]:"")):"AMD";
- x.gpuV=/nvidia/i.test(x.gpu)?"Nvidia":"AMD";x.ramB=x.ramN>=16?"16+":x.ramN>=12?"12":"8";
+ x.gpuV=/nvidia|geforce|gtx|rtx|quadro/i.test(x.gpu)?"Nvidia":/amd|radeon/i.test(x.gpu)?"AMD":/intel|uhd|iris/i.test(x.gpu)?"Intel":"Інша";x.ramB=x.ramN>=16?"16+":x.ramN>=12?"12":"8";
  x.hasSSD=/ssd/i.test(x.disk);x.dk=x.hasSSD?"ssd":"nossd";x.dGB=toGB(x.disk)});
 var grid=$("grid"),chips=$("chips"),F={b:"",gpuV:"",cpuF:"",ramB:"",dk:"",scr:""};
 function card(x){
@@ -433,7 +433,7 @@ grid.innerHTML=L.filter(function(x){return !x.sold}).map(card).join("");var grid
 (function(){var s=document.createElement("script");s.type="application/ld+json";s.text=JSON.stringify({"@context":"https://schema.org","@graph":L.map(function(x){return{"@type":"Product","name":x.n+" #"+pad(x.id),"sku":pad(x.id),"brand":{"@type":"Brand","name":x.b},"image":x.photos&&x.photos[0]?new URL(x.photos[0],location.href).href:undefined,"description":[x.scr?x.scr+'"':"",x.cpu,x.gpu,x.ram+" ОЗУ",x.disk].filter(Boolean).join(", "),"itemCondition":"https://schema.org/UsedCondition","offers":{"@type":"Offer","priceCurrency":"UAH","price":x.price||undefined,"availability":x.sold?"https://schema.org/SoldOut":"https://schema.org/InStock","url":location.origin+location.pathname+"#"+pad(x.id)}}})});document.head.appendChild(s)})();
 /* ---- фільтри ---- */
 function uniq(k){var a=[];L.forEach(function(x){if(a.indexOf(x[k])<0)a.push(x[k])});return a}
-var G=[{k:"gpuV",t:"Відеокарта",o:uniq("gpuV").map(function(v){return [v,v=="Nvidia"?"Nvidia GeForce":"AMD Radeon"]})},
+var G=[{k:"gpuV",t:"Відеокарта",o:uniq("gpuV").map(function(v){return [v,v=="Nvidia"?"Nvidia GeForce":v=="AMD"?"AMD Radeon":v=="Intel"?"Intel Graphics":v]})},
  {k:"cpuF",t:"Процесор",o:uniq("cpuF").map(function(v){return [v,v]})},
  {k:"ramB",t:"Оперативна пам'ять",o:[["8","8 ГБ"],["12","12 ГБ"],["16+","16 ГБ і більше"]].filter(function(o){return uniq("ramB").indexOf(o[0])>=0})},
  {k:"scr",t:"Діагональ",o:uniq("scr").filter(Boolean).sort(function(a,b){return parseFloat(a)-parseFloat(b)}).map(function(v){return [v,v+'"']})},
